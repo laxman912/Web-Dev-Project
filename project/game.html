@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Hub | Quiz</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FOOTBALL<span>HUB</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="game.html" class="active">Game</a></li>
+                <li><a href="topics.html">Topics</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="quiz-section">
+        <h1 class="page-header">WORLD CUP HISTORY QUIZ</h1>
+        <div class="accent-bar"></div>
+
+        <div id="quiz-container" class="quiz-container">
+            <div class="question-header">
+                <span id="q-idx">1</span>
+                <h2 id="q-content">Loading Question...</h2>
+            </div>
+            <div id="options-box" class="options-grid"></div>
+            <div class="quiz-status">
+                <p id="current-score">Score: 0/10</p>
+                <button id="next-btn" class="hidden-btn">Next Question</button>
+            </div>
+        </div>
+
+        <div id="result-container" class="quiz-container result-view hidden-btn">
+            <img id="result-img" src="" alt="Result Image">
+            <h2 id="result-text"></h2>
+            <p id="result-quote"></p>
+            <button id="play-again-btn">PLAY AGAIN</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Football Hub. Created by Kashyap, Laxman, and Dibya.</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
